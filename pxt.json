@@ -1,5 +1,6 @@
 {
     "name": "pxt-tm-microbit-link-v2",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
