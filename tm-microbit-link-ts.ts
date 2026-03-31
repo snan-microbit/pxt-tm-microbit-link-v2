@@ -22,7 +22,7 @@
 /**
  * Extensión para vincular Teachable Machine con micro:bit
  */
-//% weight=110 color=#2ecc71 icon="\uf0e8" block="TM-micro:bit-Link"
+//% weight=200 color=#2ecc71 icon="\uf0e8" block="TM-micro:bit-Link"
 namespace iaMachine {
 
     let ultimaClase = "ninguna";
