@@ -122,7 +122,7 @@ namespace iaMachine {
      * Habilitar modo controlado
      */
     //% blockId=ia_enable_flow_control
-    //% block="Habilitar modo controlado"
+    //% block="habilitar modo controlado"
     //% weight=80
     //% advanced=true
     export function habilitarModoControlado() {
@@ -133,7 +133,7 @@ namespace iaMachine {
      * Deshabilitar modo controlado
      */
     //% blockId=ia_disable_flow_control
-    //% block="Deshabilitar modo controlado"
+    //% block="deshabilitar modo controlado"
     //% weight=79
     //% advanced=true
     export function deshabilitarModoControlado() {
@@ -144,7 +144,7 @@ namespace iaMachine {
      * Enviar confirmación manual a la app
      */
     //% blockId=ia_send_ready
-    //% block="Enviar señal de listo"
+    //% block="enviar señal de listo"
     //% weight=78
     //% advanced=true
     export function enviarListo() {
@@ -157,7 +157,7 @@ namespace iaMachine {
      * Se ejecuta cuando se conecta a la app
      */
     //% blockId=ia_on_connected
-    //% block="Al conectar a la app"
+    //% block="al conectar a la app"
     //% weight=70
     export function alConectar(handler: () => void) {
         bluetooth.onBluetoothConnected(handler);
@@ -167,7 +167,7 @@ namespace iaMachine {
      * Se ejecuta cuando se desconecta de la app
      */
     //% blockId=ia_on_disconnected
-    //% block="Al desconectar de la app"
+    //% block="al desconectar de la app"
     //% weight=69
     export function alDesconectar(handler: () => void) {
         bluetooth.onBluetoothDisconnected(handler);
