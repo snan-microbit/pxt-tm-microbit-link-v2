@@ -22,7 +22,7 @@
 /**
  * Extensión para vincular Teachable Machine con micro:bit
  */
-//% weight=50 color=#2ecc71 icon="\uf0e8" block="TM-micro:bit-Link"
+//% weight=0 color=#2ecc71 icon="\uf0e8" block="TM-micro:bit-Link"
 namespace iaMachine {
 
     let ultimaClase = "ninguna";
@@ -58,7 +58,7 @@ namespace iaMachine {
     });
 
     //% blockId=ia_on_class_threshold
-    //% block="Al detectar clase %clase con certeza > %umbral"
+    //% block="al detectar %clase con certeza > %umbral"
     //% umbral.min=0 umbral.max=100 umbral.defl=80
     //% clase.shadow="tm_clase_picker"
     //% weight=100
@@ -81,7 +81,7 @@ namespace iaMachine {
      * Se ejecuta cuando se detecta cualquier clase que supere el umbral.
      */
     //% blockId=ia_on_any_class
-    //% block="Al detectar cualquier clase con certeza > %umbral"
+    //% block="al detectar cualquier clase con certeza > %umbral"
     //% umbral.min=0 umbral.max=100 umbral.defl=80
     //% weight=95
     export function alDetectarCualquierClase(umbral: number, handler: () => void) {
