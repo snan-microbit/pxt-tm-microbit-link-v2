@@ -26,7 +26,6 @@
 namespace iaMachine {
 
     let ultimaClase = "ninguna";
-    let claseEmitida = "ninguna";
     let certezaActual = 0;
     const IA_EVENT_ID = 9100;
     let procesandoEvento = false;
@@ -53,15 +52,7 @@ namespace iaMachine {
                 let certezaRecibida = parseInt(partes[1]);
                 ultimaClase = claseRecibida;
                 certezaActual = certezaRecibida;
-                // Flanco: emitir el evento solo cuando la clase detectada
-                // cambia respecto a la última emitida. Evita disparar los
-                // handlers de `alDetectarClase` y `alDetectarCualquierClase`
-                // en ráfaga con cada paquete BLE (causa raíz del panic 070
-                // al combinarse con `music.play`).
-                if (claseRecibida !== claseEmitida) {
-                    claseEmitida = claseRecibida;
-                    control.raiseEvent(IA_EVENT_ID, generarId(claseRecibida));
-                }
+                control.raiseEvent(IA_EVENT_ID, generarId(claseRecibida));
             }
         }
     });
